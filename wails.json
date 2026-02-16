@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "wails-demo",
+  "outputfilename": "wails-demo",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "devtools": true,
+  "outputType": "desktop",
+  "build": {
+    "webkitURL": "http://localhost:3000"
+  },
+  "author": {
+    "name": "Uğur CAN",
+    "email": "ugurc1477@gmail.com"
+  }
+}
+
