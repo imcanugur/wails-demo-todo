@@ -126,6 +126,23 @@ Output binaries:
 - **Windows**: `build/bin/wails-demo-windows-amd64.exe`
 - **macOS**: `build/bin/wails-demo-darwin-universal`
 
+### Release Binaries with GitHub Actions
+
+This project includes automated GitHub Actions workflow for building and releasing binaries:
+
+1. **Create a new tag**:
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+2. **GitHub Actions automatically**:
+   - Builds binaries for Linux, Windows, and macOS
+   - Creates a GitHub Release with all binaries attached
+   - Platform-specific builds (amd64, arm64)
+
+Releases are available at: [GitHub Releases](https://github.com/imcanugur/wails-demo-todo/releases)
+
 ## 📊 API Methods (Go Backend)
 
 All Go methods are automatically exposed to the frontend via Wails bindings:
